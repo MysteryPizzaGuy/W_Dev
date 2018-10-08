@@ -7,7 +7,11 @@
     <title>My first web page</title>
     <link rel="stylesheet" href="style.css">
     <!-- This is a comment, by the way -->
+<style>
+input[type=email]:valid { background: green }
+input[type=email]:invalid { background: red }
 
+</style>
 </head>
 
 <body>
@@ -98,7 +102,119 @@
     <p>[Maybe a bit more about Tixall]</p>
 </section>
 
+<table>
+    <colgroup>
+        <col>
+        <col class="alternative">
+        <col>
+    </colgroup>
+    <tr>
+        <td>This</td>
+        <td>That</td>
+        <td>The other</td>
+    </tr>
+    <tr>
+        <td>Ladybird</td>
+        <td>Locust</td>
+        <td>Lunch</td>
+    </tr>
+</table>
+<table>
+    <caption>Citrus</caption>
+    <colgroup span="2" class="columns1and2"></colgroup>
+    <tr>
+        <th>Lime</th>
+        <th>Lemon</th>
+        <th>Orange</th>
+        <th>Kumquat</th>
+    </tr>
+    <!-- etc. -->
+</table>
+
+<table>
+    <caption>Melon</caption
+    <colgroup>
+        <col class="column1">
+        <col span="3" class="columns2and3and4">
+    </colgroup>
+    <tr>
+        <th>Watermelon</th>
+        <th>Honeydew</th>
+        <th>Winter melon</th>
+        <th>Bitter melon</th>
+    </tr>
+    <!-- etc. -->
+</table>
+<br>
+<table>
+    <thead>
+        <tr>
+            <td>Header 1</td>
+            <td>Header 2</td>
+            <td>Header 3</td>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td>Footer 1</td>
+            <td>Footer 2</td>
+            <td>Footer 3</td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        <!-- etc. -->
+    </tbody>
+</table>
+<a href="somepage.html" accesskey="s">Some page</a>
+<form action="somescript.php" >
+    <fieldset>
+        <legend>Name</legend>
+        <p>First name <input name="firstName"></p>
+        <p>Last name <input name="lastName"></p>
+    </fieldset>
+    <fieldset>
+        <legend>Address</legend>
+        <p>Address <textarea name="address"></textarea></p>
+        <p>Postal code <input name="postcode"></p>
+    </fieldset>
+
+    <select name="country">
+        <optgroup label="Africa">
+            <option value="gam">Gambia</option>
+            <option value="mad">Madagascar</option>
+            <option value="nam">Namibia</option>
+        </optgroup>
+        <optgroup label="Europe">
+            <option value="fra">France</option>
+            <option value="rus">Russia</option>
+            <option value="uk">UK</option>
+        </optgroup>
+        <optgroup label="North America">
+            <option value="can">Canada</option>
+            <option value="mex">Mexico</option>
+            <option value="usa">USA</option>
+        </optgroup>
+    </select>
+    <input name="firstName" accesskey="f" tabindex="1">
+
 <h3>Some random form</h3>
+<input name="country" list="country_name">
+<datalist id="country_name">
+    <option value="Afghanistan">
+    <option value="Albania">
+    <option value="Algeria">
+    <option value="Andorra">
+    <option value="Armenia">
+    <option value="Australia">
+    <option value="Austria">
+    <option value="Azerbaijan">
+    <!-- etc. -->
+</datalist>
 <p><strong>Note:</strong> It looks the part, but won't do a damned thing.</p>
 
 <form action="somescript.php" method="post">
@@ -108,6 +224,9 @@
 
 <p>Comments: </p>
 <p><textarea rows="10" cols="20" name="comments">Your comments</textarea></p>
+<input type="tel" name="telephone_number">
+<input type="url" name="web_address">
+<input type="email" name="email_address"
 
 <p>Are you:</p>
 <p><input type="radio" name="areyou" value="male"> Male</p>
