@@ -1,4 +1,39 @@
+#top {
+    background-color: #ccc;
+    padding: 1em
+}
+a:active {
+    color: red;
+}
+p:first-child {
+    font-weight: bold;
+    font-size: 40px;
+}
+a:hover {
+    
+    text-decoration: none;
+    color: blue;
+    background-color: yellow;
+}
+li a:link {
+    transition: all 5s linear 2;
+    color:hsl(36,50%,50%)
+}
+a {
+    display: block;
+    padding: 20px 10px;
+}
+input:focus, textarea:focus {
+    background: #eee;
+}
+#top h1 {
+    color: #ff0;
+}
 
+#top p {
+    color: red;
+    font-weight: bold;
+}
 body {
     font-family: arial, helvetica, sans-serif;
     font-size: 14px;
@@ -11,9 +46,34 @@ body {
 /* This is a comment, by the way */
 
 p {
-    line-height: 21px;
+    font: 14px/1.5 "Times New Roman", times, serif;
+    padding: 30px 10px;
+    border: 1px black solid;
+    border-width: 1px 5px 5px 1px;
+    border-color: red green blue yellow;
+    margin: 10px 50px;
+}
+p:first-letter {
+    font-size: 24px;
+    float: left;
+}
+#navigation {
+    float: left;
+    width: 200px;
 }
 
+#navigation2 {
+    float: right;
+    width: 200px;
+}
+
+#content {
+    margin: 0 200px;
+}
+
+p:first-line {
+    font-weight: bold;
+}
 h1 {
     color: #ffc;
     background-color: #900;
@@ -27,6 +87,8 @@ h1 {
     border-bottom-style: solid;
     border-bottom-width: 0.5em;
     border-bottom-color: rgb(238, 40, 40);
+    clear: both;
+
 }
 
 h2 {

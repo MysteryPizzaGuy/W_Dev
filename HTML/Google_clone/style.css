@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+}
+
+#center {
+    position: absolute;
+    top:26%;
+    transform: translate(-50%,-50%);
+    margin-left:50%;
+}
+#searchandbutton{
+    margin-top:22px;
+    position:absolute;
+    left:50%;
+    transform: translate(-50%);
+}
+#searchbar{
+    width: 528px;
+    height: 44px;
+    border: none;
+    box-shadow: 0px 1px 0.5px 0.5px rgba(0,0,0,0.2);
+
+}
+#searchbar:hover{
+
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.2);
+
+}
+
+#buttons {
+    width:528px;
+    position:absolute;
+    left:50%;
+    transform: translate(-50%);
+    margin-top:34px
+}
+
+input[type="submit"]{
+    position:absolute;
+    width:125.75px;
+    height:36px;
+    border:none;
+    box-shadow:inset 0px 0px 0px 1px rgba(0,0,0,0.01);
+    background-color: #f2f2f2;
+    border-radius: 2px;
+    color: #757575;
+    font-weight: bold;
+    left:50%;
+    transform: translate(-110%);
+}
+input[type="submit"]:hover{
+    box-shadow:inset 0px 0px 0px 1px rgba(0,0,0,0.2);
+    color: black;
+    
+}
+#luckybutton {
+    width:142.58px;
+    transform: translate(-2%);
+}
