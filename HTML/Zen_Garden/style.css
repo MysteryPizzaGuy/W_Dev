@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.page-wrapper {
+    display: grid;
+    grid-auto-columns: 3fr minmax(200px,1fr);
+    grid-template-areas: 
+        "hd hd"
+        "article side";
+
+}
+body{
+    background-color:#373737;
+    font-family: 'Montserrat', sans-serif;
+    color:#dcd0c0;
+
+}
+.intro{
+    grid-area: hd;
+}
+.intro >header{
+    text-align: center;
+    background-image: url(res/brush-stroke.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 50%;
+
+}
+
+.main.supporting{
+    grid-area: article;
+    display:grid;
+    
+}
+.main.supporting>footer{
+    justify-self: center;
+    font-weight: bolder;
+}
+.main.supporting>footer>a{
+    padding:10px;
+
+}
+.sidebar{
+    grid: side;
+}
+a{
+    color:#c0b283;
+}
+a:visited{
+    color:#dcd0c0;
+}
+
