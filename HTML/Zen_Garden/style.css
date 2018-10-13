@@ -27,19 +27,40 @@ body{
 
 .main.supporting{
     grid-area: article;
-    display:grid;
-    
+    display:grid;    
+    padding:5px;
 }
 .main.supporting>footer{
+    width: 30em;
+    height: 3em;
     justify-self: center;
     font-weight: bolder;
+    background-image: url(res/grunge-brush-stroke-banner-2-7.png);
+    background-size: 100% 4em;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items:center;
 }
 .main.supporting>footer>a{
-    padding:10px;
-
+    padding:1em;
 }
 .sidebar{
     grid: side;
+}
+
+.wrapper > div{
+    background-color: #352E2E;
+    padding:1px;
+}
+.wrapper >div:last-child{
+    border-radius: 0px 0px 25px 25px;
+}
+.wrapper >div:first-child{
+    border-radius: 25px 25px 0px 0px ;
+}
+.wrapper > div> h3{
+    text-align: center;
 }
 a{
     color:#c0b283;
